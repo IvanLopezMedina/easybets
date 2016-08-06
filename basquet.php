@@ -3,9 +3,9 @@ session_start();
 include('conexion.php');
 $db=new mysqli($servidor, $usuari, $clau, $bbdd);
 if(!isset($_SESSION["mail"])){
-        header('location:login.php');
-    }else{
-        include('informaciobasica.php');
+    header('location:login.php');
+}else{
+    include('informaciobasica.php');
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -25,7 +25,7 @@ if(!isset($_SESSION["mail"])){
     <link type="text/css" rel="stylesheet" href="styles/main.css">
     <link type="text/css" rel="stylesheet" href="styles/style-responsive.css">
     <link type="text/css" rel="stylesheet" href="styles/jquery.news-ticker.css">
-    <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+    <link type="js" rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">  
 </head>
 <body>
